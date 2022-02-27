@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Changing Paragraph Text by User input </title>
+        </head>
+    <body>
+        <Paragraph id='paragraphText'>This is Paragraph </Paragraph>
+        <input type=text id='userInput'>
+        <button onclick='changeText()'>Change The Paragraph Text</button>
+        
+        
+    <script>
+    function changeText(){
+        document.getElementById('paragraphText').style.color="blue";
+        var getUserInput = document.getElementById('userInput').value;
+        document.getElementById('paragraphText').innerHTML =getUserInput;
+    }
+    </script> 
+    </body>
+</html>
